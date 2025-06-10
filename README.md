@@ -29,4 +29,4 @@ I am using iPhone 16 with the speed setting set to 7.0. If the timing feels off 
 The idea is to capture the game by iPhone Mirroring in real-time, detect the notes, then simulates input by mouse automation.
 I started by first implementing some basic features, then later found out that **macOS does not support multiple simultaneous mouse inputs**, which might be a limitation that cannot be bypassed. I guess this approach might not be feasible, however, feel free to open an issue / PR if you have any ideas.
 
-In addition, swipe (arrow) actions have not been implemented. In the demo video, swipe actions and simultaneously pressing two places currently fail.
+In addition, swipe (arrow) actions have not been implemented. In the [demo video](asset/demo.mp4), swipe actions and simultaneously pressing two places currently fail.
