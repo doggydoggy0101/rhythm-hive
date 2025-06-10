@@ -81,7 +81,7 @@ class State:
                         if p != self.states[i]:
                             self.actions[i] = "move"
                         else:
-                            self.actions[i] = "continue" # dummy action
+                            self.actions[i] = "continue"  # dummy action
                         # update state
                         self.states[i] = p
                         matched = True

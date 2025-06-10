@@ -11,7 +11,7 @@ from Quartz.CoreGraphics import (
 )
 
 logger = logging.getLogger(__name__)
-# logger.setLevel(logging.INFO)
+logger.setLevel(logging.INFO)
 
 
 def mouse_event(type, x, y):
