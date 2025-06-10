@@ -28,12 +28,10 @@ class Config:
 
         # luminance parameters
         self.luminance_weight = np.array([0.299, 0.587, 0.114])  # RGB
-        self.slide_luminance_threshold = 196
-        self.swipe_luminance_threshold = 96
+        self.luminance_threshold = 196
 
         # movement parameters
-        self.slide_position_threshold = 50
-        self.swipe_position_threshold = 25
+        self.move_threshold = 50
 
         # time paramters
         self.mspf = 20  # 50 fps

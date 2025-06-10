@@ -26,7 +26,7 @@ class State:
         max_detect_bar = np.max(detect_bar @ self.config.luminance_weight, axis=0)
 
         for i, val in enumerate(max_detect_bar):
-            if val > self.config.slide_luminance_threshold:
+            if val > self.config.luminance_threshold:
                 if start is None:
                     start = i
             else:
@@ -76,7 +76,7 @@ class State:
                 matched = False
                 for p in position_list:
                     # determine same state
-                    if abs(p - self.states[i]) <= self.config.slide_position_threshold:
+                    if abs(p - self.states[i]) <= self.config.move_threshold:
                         # assign move
                         if p != self.states[i]:
                             self.actions[i] = "move"

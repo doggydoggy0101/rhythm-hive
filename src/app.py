@@ -113,8 +113,12 @@ class MainWindow(QWidget):
 
     def click_window(self):
         x, y = self.position_func()
-        mouse_down(x + 100, y + 100)
-        mouse_up(x + 100, y + 100)
+        click_x, click_y = (
+            x + self.config.input_bar_y // 2,
+            y + self.config.input_bar_y // 2,
+        )
+        mouse_down(click_x, click_y)
+        mouse_up(click_x, click_y)
 
     def start_detection(self):
         logger.info("start detection")

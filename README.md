@@ -4,7 +4,7 @@ A small python project to (ideally) auto-play Rhythm Hive.
 https://github.com/user-attachments/assets/c8e401d6-06a2-4833-a31a-9bed05c6efb1
 
 ### :cherry_blossom: Set-up
-Install the dependencies:
+Install dependencies:
 
 ```sh
 pip install -r requirements.txt

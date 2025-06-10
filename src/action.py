@@ -11,7 +11,7 @@ from Quartz.CoreGraphics import (
 )
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+# logger.setLevel(logging.INFO)
 
 
 def mouse_event(type, x, y):
@@ -48,12 +48,13 @@ class Action:
                 logger.debug(f"press at global coordinate: ({x}, {y})")
                 mouse_down(x, y)
 
-            if action == "release":
-                x, y = self.map2screen(state)
-                logger.debug(f"release at global coordinate: ({x}, {y})")
-                mouse_up(x, y)
-
             if action == "move":
                 x, y = self.map2screen(state)
                 logger.debug(f"move to global coordinate: ({x}, {y})")
                 mouse_drag(x, y)
+
+            if action == "release":
+                x, y = self.map2screen(state)
+                logger.debug(f"release at global coordinate: ({x}, {y})")
+                mouse_drag(x, y - 5)
+                mouse_up(x, y - 5)
