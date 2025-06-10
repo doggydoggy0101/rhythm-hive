@@ -1,0 +1,7 @@
+numpy
+scipy
+opencv-python
+PyQt5
+pyobjc-core
+pyobjc-framework-Quartz
+ruff  # format
