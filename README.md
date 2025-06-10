@@ -1,7 +1,7 @@
 # Rhythm Hive
 A small python project to (ideally) auto-play Rhythm Hive.
 
-https://github.com/user-attachments/assets/c8e401d6-06a2-4833-a31a-9bed05c6efb1
+https://github.com/user-attachments/assets/7b53ac89-1c50-4c1d-b61b-9caa1cdcfec0
 
 ### :cherry_blossom: Set-up
 Install dependencies:
