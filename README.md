@@ -29,6 +29,6 @@ I started by first implementing some basic features, then later found out that *
 
 **Implementation details**
 
-The red bar represents the detection region where luminance is computed. We set a luminance threshold to determine an action and its corresponding position for input. The logic for tap (`press` then `release`) and slide (`press`, `move`, then `release`) is similar, in fact, the logic for slide can also handle tap. I have not come up with a good solution for the swipe (arrow) case yet, I currently replace `release` by `swipe up`, that is, all tap, slide, and swipe ends with `swipe up`.
+The red bar represents the detection region where luminance is computed. We set a luminance threshold to determine an action and its corresponding position for input. The logic for tap (`press` then `release`) and slide (`press`, `move`, then `release`) is similar, in fact, the logic for slide can also handle tap. I have not yet come up with a good solution for the swipe (arrow) case, I currently replace `release` by `swipe up`, that is, all tap, slide, and swipe ends with `swipe up`.
 
-As shown in the demo video, tap and slide works well, swipe works in most cases, and simultaneously pressing two places currently fails. All configuration settings can be found in `main.py`. The screen shot method is based on this project: [MapleStory Artale ExpLab](https://github.com/StephLin/maplestory-artale-explab).
+As shown in the demo video, tap and slide works well, swipe works in most cases, and simultaneously pressing two places currently fails. All configuration settings can be found in `main.py`. The screen shot method is based on the project: [MapleStory Artale ExpLab](https://github.com/StephLin/maplestory-artale-explab).
