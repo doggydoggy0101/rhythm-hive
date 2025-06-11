@@ -12,8 +12,8 @@ from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.QtGui import QPainter, QColor
 from PyQt5.QtCore import QTimer, Qt
 
-from src.detect import State
-from src.action import Action, mouse_down, mouse_up
+from .detect import State
+from .action import Action, mouse_down, mouse_up
 
 
 logger = logging.getLogger(__name__)
